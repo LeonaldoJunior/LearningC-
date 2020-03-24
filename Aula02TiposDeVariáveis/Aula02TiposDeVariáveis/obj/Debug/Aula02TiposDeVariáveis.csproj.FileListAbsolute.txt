@@ -1,0 +1,6 @@
+C:\Users\Leonaldo\Desktop\LearningC-\Aula02TiposDeVariáveis\Aula02TiposDeVariáveis\bin\Debug\Aula02TiposDeVariáveis.exe.config
+C:\Users\Leonaldo\Desktop\LearningC-\Aula02TiposDeVariáveis\Aula02TiposDeVariáveis\bin\Debug\Aula02TiposDeVariáveis.exe
+C:\Users\Leonaldo\Desktop\LearningC-\Aula02TiposDeVariáveis\Aula02TiposDeVariáveis\bin\Debug\Aula02TiposDeVariáveis.pdb
+C:\Users\Leonaldo\Desktop\LearningC-\Aula02TiposDeVariáveis\Aula02TiposDeVariáveis\obj\Debug\Aula02TiposDeVariáveis.csprojResolveAssemblyReference.cache
+C:\Users\Leonaldo\Desktop\LearningC-\Aula02TiposDeVariáveis\Aula02TiposDeVariáveis\obj\Debug\Aula02TiposDeVariáveis.exe
+C:\Users\Leonaldo\Desktop\LearningC-\Aula02TiposDeVariáveis\Aula02TiposDeVariáveis\obj\Debug\Aula02TiposDeVariáveis.pdb
