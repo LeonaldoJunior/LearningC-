@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aula07FuncoesRecursivas
+namespace Aula08FuncoesRecursivas
 {
     class Program
     {
@@ -40,7 +40,7 @@ namespace Aula07FuncoesRecursivas
         {
             while (true)
             {
-                Console.WriteLine($"Digite {SAIDA_PROGRAMA} para sair do programa");
+                Console.WriteLine($"Digite {SAIDA_PROGRAMA} para começar a ler os arquivos");
                 int valorDigitado = int.Parse(Console.ReadLine());
                 if (valorDigitado == SAIDA_PROGRAMA) break;
             }
