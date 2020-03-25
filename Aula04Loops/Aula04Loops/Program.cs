@@ -82,7 +82,7 @@ namespace Aula04Loops
 
             //Função recursiva
 
-
+            looping(1);
 
 
 
@@ -106,6 +106,14 @@ namespace Aula04Loops
             Console.WriteLine($"Vacinas dadas {vacinasDadas} ");
             Console.Read();
 
+        }
+
+        public static void looping(int a)
+        {
+            if (a < 3)
+            {
+                looping(a++);
+            }
         }
     }
 }
