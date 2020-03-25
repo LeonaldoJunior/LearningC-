@@ -44,9 +44,7 @@ namespace Aula05ArrayCollections
             {
                 Console.WriteLine(nome);
             }
-
-
-
+            
             Console.Read();
         }
     }
