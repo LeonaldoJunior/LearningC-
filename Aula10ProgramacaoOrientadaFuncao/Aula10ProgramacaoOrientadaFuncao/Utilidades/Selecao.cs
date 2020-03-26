@@ -26,7 +26,7 @@ namespace Utilidades
                 "\n0 - Sair do programa" +
                 "\n1 - Ler arquivos" +
                 "\n2 - Executar a tabuada" +
-                "\n3 - Calcular soma";
+                "\n3 - Calcular media do aluno";
 
             Console.WriteLine(mensagemInicial);
 

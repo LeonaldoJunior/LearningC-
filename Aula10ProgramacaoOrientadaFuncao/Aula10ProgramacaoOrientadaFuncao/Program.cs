@@ -1,4 +1,5 @@
 ﻿using Calculo;
+using Classes;
 using Diretorio;
 using System;
 using System.Collections.Generic;
@@ -12,18 +13,24 @@ namespace Aula10ProgramacaoOrientadaFuncao
 {
     public static class Program
     {
-
-
-
-
-
-
-
-       
-
         static void Main(string[] args)
         {
-            Selecao.Menu();
+            var clientes = Cliente.LerClientes();
+
+            //var cliente1 = new Cliente();
+            //cliente1.nome = "Gian";
+            //cliente1.cpf = "111111111";
+            //cliente1.telefone = "1111111110";
+            //cliente1.Gravar();
+
+            //var cliente2 = new Cliente();
+            //cliente2.nome = "Leonaldo";
+            //cliente2.cpf= "222222222";
+            //cliente2.nome = "2222222220";
+            //cliente2.Gravar();
+
+            //Selecao.Menu();
+
         }
     }
 }
