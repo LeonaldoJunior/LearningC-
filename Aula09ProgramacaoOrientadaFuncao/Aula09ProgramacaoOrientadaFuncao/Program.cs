@@ -21,8 +21,6 @@ namespace Aula09ProgramacaoOrientadaFuncao
             Console.WriteLine($"======= Tabuada do {numero} =======");
             for (int multiplo = 0; multiplo <= 10; multiplo++)
                 Console.WriteLine($"\t{numero} X {multiplo} = { numero * multiplo }");
-            Console.WriteLine("===================================");
-
         }
         private static void LerArquivo(int numeroArquivo)
         {
@@ -45,8 +43,6 @@ namespace Aula09ProgramacaoOrientadaFuncao
             {
                 LerArquivo(numeroArquivo + 1);
             }
-            Console.WriteLine("===================================");
-
         }
 
         public const int NUMERO_ARQUIVO_INICIAL = 1;
@@ -67,7 +63,6 @@ namespace Aula09ProgramacaoOrientadaFuncao
                 "\n1 - Ler arquivos" +
                 "\n2 - Executar a tabuada" +
                 "\n3 - Calcular média de alunos";
-            Console.WriteLine("===================================");
 
             Console.WriteLine(mensagemInicial);
 
