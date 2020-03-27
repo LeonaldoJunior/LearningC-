@@ -1,5 +1,4 @@
-﻿using Aula10ProgramacaoOrientadaFuncao;
-using Calculo;
+﻿using Calculo;
 using Diretorio;
 using System;
 using System.Collections.Generic;
@@ -17,6 +16,7 @@ namespace Utilidades
         public const int TABUADA = 2;
         public const int CALCULO_MEDIA = 3;
         public const int QTD_NOTAS = 3;
+        public const int CADASTRAR_CLIENTES = 4;
 
         public static void Menu()
         {
@@ -26,9 +26,10 @@ namespace Utilidades
                 "\n0 - Sair do programa" +
                 "\n1 - Ler arquivos" +
                 "\n2 - Executar a tabuada" +
-                "\n3 - Calcular media do aluno";
+                "\n3 - Calcular media do aluno" +
+                "\n4 - Cadastrar Clientes";
 
-            Console.WriteLine(mensagemInicial);
+            Console.WriteLine(  );
 
             while (true)
             {
@@ -50,6 +51,9 @@ namespace Utilidades
                         break;
                     case 3:
                         Media.CalculoMedia();
+                        break;
+                    case 4:
+                        TelaCliente.Chamar();
                         break;
                 }
             }

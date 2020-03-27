@@ -37,6 +37,12 @@ namespace Classes
             }
         }
 
+
+        private void olhar()
+        {
+            Console.WriteLine("O cliente" + this.nome + "esta olhando pra mim");
+        }
+
         private static string caminhoDoArquivo()
         {
             return ConfigurationManager.AppSettings["BaseDeClientes"];

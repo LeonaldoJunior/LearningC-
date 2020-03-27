@@ -1,4 +1,8 @@
 nome;telefone;cpf
 Leonaldo;41999999999;111111111111;
 Gian;1111111110;111111111;
-Betoma;222222220;222222222;
+Betina;222222220;222222222;
+pedro;alex;paulo;
+asdda;dddd;sss;
+xuu;5678;1234;
+xuxu;222;111;
