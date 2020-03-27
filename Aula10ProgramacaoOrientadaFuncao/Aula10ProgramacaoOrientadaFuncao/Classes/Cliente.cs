@@ -14,9 +14,27 @@ namespace Classes
         public string telefone;
         public string cpf;
 
+        //public Cliente(string nome, string telefone, string cpf)
+        //{
+        //    this.nome = nome;
+        //    this.telefone = telefone;
+        //    this.cpf = cpf;
+        //}
+
         public void Gravar()
         {
-            //to do
+            var clientes = Cliente.LerClientes();
+            clientes.Add(this);
+            if (File.Exists(caminhoDoArquivo()))
+            {
+                string conteudo = "nome;telefone;cpf\n";
+                foreach (Cliente c in clientes)
+                {
+                    conteudo += c.nome + ";" + c.telefone + ";" + c.cpf + ";\n";
+                }
+
+                File.WriteAllText(caminhoDoArquivo(), conteudo);
+            }
         }
 
         private static string caminhoDoArquivo()
@@ -37,13 +55,14 @@ namespace Classes
                     while ((linha = arquivo.ReadLine()) != null)
                     {
                         i++;
-                        if (i == 1) continue;
+                        if (i == 1) continue;//para ignorar a primeira linha do arquivo pois é uma linha de cabeçalho
 
                         var clienteDadosSeparados = linha.Split(';');
-                        var cliente = new Cliente();
-                        cliente.nome = clienteDadosSeparados[0];
-                        cliente.nome = clienteDadosSeparados[1];
-                        cliente.nome = clienteDadosSeparados[2];
+                        var cliente = new Cliente {
+                            nome = clienteDadosSeparados[0],
+                            telefone = clienteDadosSeparados[1],
+                            cpf = clienteDadosSeparados[2]
+                        };
 
                         clientes.Add(cliente);
 
