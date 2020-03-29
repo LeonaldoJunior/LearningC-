@@ -18,28 +18,35 @@ namespace Aula10ProgramacaoOrientadaFuncao
           //  Selecao.Menu();
 
             Usuario u = new Usuario();
-            u.nome = "junior";
+            u.nome = "xina";
             u.telefone = "123";
             u.cpf = "000000";
-            u.Gravar();
+            //u.Gravar();
+            u.olhar();
 
-            Console.WriteLine("=====================Cadastro de Usuario ===================");
-            foreach (Usuario us in Usuario.LerUsuario())
-            {
-                Console.WriteLine(u.nome);
-                Console.WriteLine(u.telefone);
-                Console.WriteLine(u.cpf);
-                Console.WriteLine("============================");
-            }
-            Console.WriteLine("=====================Cadastro de Cliente ===================");
+            //Cliente cli = new Cliente();
+            //cli.nome = "Cliente";
+            //cli.telefone = "123";
+            //cli.cpf = "000000";
+            //cli.Gravar();
 
-            foreach (Cliente cl in Cliente.LerClientes())
-            {
-                Console.WriteLine(cl.nome);
-                Console.WriteLine(cl.telefone);
-                Console.WriteLine(cl.cpf);
-                Console.WriteLine("============================");
-            }
+            //Console.WriteLine("=====================Cadastro de Usuario ===================");
+            //foreach (Usuario us in Usuario.LerUsuario())
+            //{
+            //    Console.WriteLine(u.nome);
+            //    Console.WriteLine(u.telefone);
+            //    Console.WriteLine(u.cpf);
+            //    Console.WriteLine("============================");
+            //}
+            //Console.WriteLine("=====================Cadastro de Cliente ===================");
+
+            //foreach (Cliente cl in Cliente.LerClientes())
+            //{
+            //    Console.WriteLine(cl.nome);
+            //    Console.WriteLine(cl.telefone);
+            //    Console.WriteLine(cl.cpf);
+            //    Console.WriteLine("============================");
+            //}
             Console.ReadLine();
         }
     }

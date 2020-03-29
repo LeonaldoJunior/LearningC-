@@ -20,7 +20,7 @@ namespace Utilidades
 
         public static void Menu()
         {
-            var mensagemInicial = "Olá usuário, bem vindo ao programa, utilizando programação funcional";
+           
             var mensagemMenu =
                 "\nDigite uma das opções abaixo:" +
                 "\n0 - Sair do programa" +
