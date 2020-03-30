@@ -18,43 +18,46 @@ namespace Aula10ProgramacaoOrientadaFuncao
         {
             //  Selecao.Menu();
 
-            //Usuario u = new Usuario();
-            //u.nome = "xina";
-            //u.telefone = "123";
-            //u.cpf = "000000";
-            ////u.Gravar();
+            Cliente cli = new Cliente();
+            cli.nome = "Cliente";
+            cli.telefone = "123";
+            cli.cpf = "000000";
+            cli.Gravar();
+
+            Console.WriteLine("=====================Cadastro de Cliente ===================");
+            foreach (Base cl in new Cliente().Ler())
+            {
+                Console.WriteLine(cl.nome);
+                Console.WriteLine(cl.telefone);
+                Console.WriteLine(cl.cpf);
+                Console.WriteLine("============================");
+            }
+
+
+            Usuario u = new Usuario();
+            u.nome = "xina";
+            u.telefone = "123";
+            u.cpf = "000000";
+            u.Gravar();
             //u.olhar();
 
-            //Cliente cli = new Cliente();
-            //cli.nome = "Cliente";
-            //cli.telefone = "123";
-            //cli.cpf = "000000";
-            //cli.Gravar();
-
-            //Console.WriteLine("=====================Cadastro de Usuario ===================");
-            //foreach (Usuario us in Usuario.LerUsuario())
-            //{
-            //    Console.WriteLine(u.nome);
-            //    Console.WriteLine(u.telefone);
-            //    Console.WriteLine(u.cpf);
-            //    Console.WriteLine("============================");
-            //}
-            //Console.WriteLine("=====================Cadastro de Cliente ===================");
-
-            //foreach (Cliente cl in Cliente.LerClientes())
-            //{
-            //    Console.WriteLine(cl.nome);
-            //    Console.WriteLine(cl.telefone);
-            //    Console.WriteLine(cl.cpf);
-            //    Console.WriteLine("============================");
-            //}
+            Console.WriteLine("=====================Cadastro de Usuario ===================");
+            foreach (Base us in new Usuario().Ler())
+            {
+                Console.WriteLine(us.nome);
+                Console.WriteLine(us.telefone);
+                Console.WriteLine(us.cpf);
+                Console.WriteLine("============================");
+            }
 
 
-            Ferramentas f = new Ferramentas();
-            bool d = f.ValidarCPF("1212312313");
-            Console.WriteLine(d);
 
-            f.MetodoParaTodosQueUtilizamAssembly();
+
+            //Ferramentas f = new Ferramentas();
+            //bool d = f.ValidarCPF("1212312313");
+            //Console.WriteLine(d);
+
+            //f.MetodoParaTodosQueUtilizamAssembly();
             Console.ReadLine();
 
 

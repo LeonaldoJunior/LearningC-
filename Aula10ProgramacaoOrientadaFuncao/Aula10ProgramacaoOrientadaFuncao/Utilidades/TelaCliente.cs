@@ -13,7 +13,7 @@ namespace Utilidades
 
         public static void Chamar()
         {
-            var clientes = Cliente.LerClientes();
+            var clientes = new Cliente().Ler();
 
             Console.WriteLine("========================== Cadastro de cliente ======================");
 

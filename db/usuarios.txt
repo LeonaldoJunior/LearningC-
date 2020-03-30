@@ -1,2 +1,0 @@
-nome;telefone;cpf
-junior;123;000000;
