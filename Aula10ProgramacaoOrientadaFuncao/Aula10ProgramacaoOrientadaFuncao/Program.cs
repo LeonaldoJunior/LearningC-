@@ -12,11 +12,15 @@ using Utilidades;
 
 namespace Aula10ProgramacaoOrientadaFuncao
 {
-    public static class Program
+   public static class Program
     {
         static void Main(string[] args)
         {
             //  Selecao.Menu();
+
+
+            var cachorro = new Cachorro();
+            cachorro.latir();
 
             Cliente cli = new Cliente();
             cli.nome = "Cliente";

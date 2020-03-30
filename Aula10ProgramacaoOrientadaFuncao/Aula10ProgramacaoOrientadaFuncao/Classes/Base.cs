@@ -6,7 +6,7 @@ using System.IO;
 
 namespace Classes
 {
-    public class Base: IPessoa
+    public abstract class Base: IPessoa
     {
         public string nome;
         public string telefone;
@@ -61,8 +61,8 @@ namespace Classes
 
                         var DadosSeparados = linha.Split(';');
 
-                        var b = new Base();
-                        //var b = (IPessoa)Activator.CreateInstance(this.GetType());
+                        //var b = new Base();
+                        var b = (IPessoa)Activator.CreateInstance(this.GetType());
                         b.SetNome(DadosSeparados[0]);
                         b.SetTelefone(DadosSeparados[1]);
                         b.SetCpf(DadosSeparados[2]);

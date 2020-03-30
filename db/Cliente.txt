@@ -2,3 +2,4 @@ nome;telefone;cpf
 Cliente;123;000000;
 Cliente;123;000000;
 Cliente;123;000000;
+Cliente;123;000000;
