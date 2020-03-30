@@ -18,6 +18,10 @@ namespace Classes
             {
                 return idadePreDefinida;
             }
+            set
+            {
+                idadePreDefinida = value;
+            }
         }
 
         private int idadePreDefinida = 2;

@@ -12,14 +12,44 @@ using Utilidades;
 
 namespace Aula10ProgramacaoOrientadaFuncao
 {
+    //class Animal {
+    //    public virtual string teste()
+    //    {
+    //        return "teste";
+    //    }
+    //}
+
+    //class Macaco : Animal
+    //{
+    //    public override string teste()
+    //    {
+    //        return "ssss";
+    //    }
+    //}
+
+    partial class Animal
+    {
+        public string teste;
+        partial void tt();
+    }
+
+    partial class Animal
+    {
+        public string teste2;
+        partial void tt()
+        {
+            Console.WriteLine("Teste Partial");
+        }
+
+    }
+    
    public static class Program
     {
 
-
-
-
         static void Main(string[] args)
         {
+
+           // var x = new Animal();
 
             var c = new Cachorro();
             c.idade = 12;
