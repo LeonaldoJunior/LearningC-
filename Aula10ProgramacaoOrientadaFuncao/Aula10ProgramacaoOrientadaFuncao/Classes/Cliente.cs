@@ -21,6 +21,17 @@ namespace Classes
         //    this.cpf = cpf;
         //}
 
+        public int Calculo3()
+        {
+            return 1 + 2;
+        }
+
+        internal int Calculo4()
+        {
+            return 1 + 2;
+        }
+
+
         public virtual void Gravar()
         {
             var clientes = Cliente.LerClientes();

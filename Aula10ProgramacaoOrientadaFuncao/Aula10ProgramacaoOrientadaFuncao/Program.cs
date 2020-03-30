@@ -1,5 +1,6 @@
 ﻿using Calculo;
 using Classes;
+using Componentes;
 using Diretorio;
 using System;
 using System.Collections.Generic;
@@ -15,14 +16,14 @@ namespace Aula10ProgramacaoOrientadaFuncao
     {
         static void Main(string[] args)
         {
-          //  Selecao.Menu();
+            //  Selecao.Menu();
 
-            Usuario u = new Usuario();
-            u.nome = "xina";
-            u.telefone = "123";
-            u.cpf = "000000";
-            //u.Gravar();
-            u.olhar();
+            //Usuario u = new Usuario();
+            //u.nome = "xina";
+            //u.telefone = "123";
+            //u.cpf = "000000";
+            ////u.Gravar();
+            //u.olhar();
 
             //Cliente cli = new Cliente();
             //cli.nome = "Cliente";
@@ -47,7 +48,16 @@ namespace Aula10ProgramacaoOrientadaFuncao
             //    Console.WriteLine(cl.cpf);
             //    Console.WriteLine("============================");
             //}
+
+
+            Ferramentas f = new Ferramentas();
+            bool d = f.ValidarCPF("1212312313");
+            Console.WriteLine(d);
+
+            f.MetodoParaTodosQueUtilizamAssembly();
             Console.ReadLine();
+
+
         }
     }
 }
