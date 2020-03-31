@@ -49,15 +49,24 @@ namespace Aula10ProgramacaoOrientadaFuncao
         static void Main(string[] args)
         {
 
-           // var x = new Animal();
+            Email.Instancia.corpo = "bla bla bla";
+            Email.Instancia.titulo =  "Título do email";
+            Email.Instancia.origin = "leonaldo@blabla.com";
+            Email.Instancia.destino = "blabla@blalba.com";
 
-            var c = new Cachorro();
-            c.idade = 12;
-            Console.WriteLine(c.idade);
-
-            Console.WriteLine(c.idade2);
-
+            Email.Instancia.EnviarEmail();
             Console.ReadLine();
+            //var x = new Animal();
+           
+
+
+            //var c = new Cachorro();
+            //c.idade = 12;
+            //Console.WriteLine(c.idade);
+
+            //Console.WriteLine(c.idade2);
+
+            //Console.ReadLine();
 
             //    //  Selecao.Menu();
 
